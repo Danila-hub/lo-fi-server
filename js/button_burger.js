@@ -8,5 +8,5 @@ $burgerButton.addEventListener('click', function () {
 })
 $burgerCloseButton.addEventListener('click', function () {
   $burgerMenu.style.top = '-999px'
-  body.style.overflow = 'auto'
+  body.style.overflow = 'visible'
 })
