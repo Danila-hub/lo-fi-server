@@ -91,7 +91,9 @@ h6 {
 @font-face {
   font-family: "OCRAbyBT";
   src: url("../fonts/OCR-a___.eot");
-  src: local("☺"), url("../fonts/OCR-a___.woff") format("woff"), url("../fonts/OCR-a___.ttf") format("truetype"), url("../fonts/OCR-a___.svg") format("svg");
+  src: local("☺"), url("../fonts/OCR-a___.woff") format("woff"),
+    url("../fonts/OCR-a___.ttf") format("truetype"),
+    url("../fonts/OCR-a___.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
