@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "OCRAbyBT";
+  src: url("../fonts/OCR-a___.eot");
+  src: local("☺"), url("../fonts/OCR-a___.woff") format("woff"), url("../fonts/OCR-a___.ttf") format("truetype"), url("../fonts/OCR-a___.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.content {
+  flex: 1 1 auto;
+  margin-top: 100px;
+  background-color: #fabdd9;
+}
+
+.header {
+  font-family: "OCRAbyBT";
+  background-color: #292929;
+  width: 100%;
+  position: fixed;
+}
+.header__burger {
+  display: none;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  background-color: #fabdd9;
+  border-radius: 10px;
+  position: relative;
+  margin-right: 5px;
+}
+.header__burger-menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 50vh;
+  background-color: #fff;
+  display: none;
+}
+.header__burger span::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  height: 3px;
+  width: 40px;
+  background-color: #000000;
+}
+.header__burger span::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  height: 3px;
+  width: 40px;
+  background-color: #000000;
+}
+.header__burger span {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  background-color: #000000;
+}
+.header__inner {
+  height: 100px;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  height: 65px;
+  width: 65px;
+  background-color: #ffbedb;
+  border: 5px solid #242424;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #242424;
+}
+.header__nav-menu {
+  font-size: 16px;
+  display: flex;
+}
+.header__nav-menu a {
+  color: #fabdd9;
+  margin-right: 45px;
+}
+
+.heading {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.heading__text {
+  font-size: 35px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #242424;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 150px;
+  border-right: 8px solid #242424;
+  border-left: 8px solid #242424;
+  border-radius: 5px 5px 5px 5px;
+}
+
+/* player */
+.mediacontent__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mediacontent__row img {
+  width: 299px;
+}
+.mediacontent__row audio {
+  background-color: white;
+}
+
+.footer {
+  font-family: "OCRAbyBT";
+  background-color: #292929;
+  width: 100%;
+}
+.footer__inner {
+  display: flex;
+  height: 120px;
+  padding: 0px 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer__contacts img {
+  height: 33px;
+  width: 33px;
+  margin-right: 6px;
+}
+.footer__contacts-text {
+  font-size: 16px;
+  color: #fabdd9;
+  margin-bottom: 17px;
+}
+.footer__authors {
+  font-size: 16px;
+  color: #fabdd9;
+}
+.footer__authors p {
+  margin-bottom: 15px;
+}
+.footer__authors p:last-child {
+  margin-bottom: 0px;
+}
+
+/* media zone */
+@media (max-width: 1098px) {
+  .gallery__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -100px;
+  }
+  .gallery__row img {
+    margin-left: 100px;
+    margin-bottom: 25px;
+    width: 60%;
+  }
+  .gallery__row img:nth-child(1) {
+    box-shadow: 0 0 16.9px 1.1px #82334e;
+  }
+  .gallery__row img:nth-child(2) {
+    box-shadow: 0 0 16.9px 1.1px #e88572;
+  }
+  .gallery__row img:nth-child(3) {
+    box-shadow: 0 0 16.9px 1.1px #d3e187;
+  }
+  .gallery__row img:nth-child(4) {
+    box-shadow: 0 0 16.9px 1.1px #ed7171;
+  }
+  .gallery__row img:nth-child(5) {
+    box-shadow: 0 0 16.9px 1.1px #f259c5;
+  }
+  .gallery__row img:nth-child(6) {
+    box-shadow: 0 0 16.9px 1.1px #726d8c;
+  }
+}
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+  .header__burger {
+    display: flex;
+  }
+  .header__burger-menu {
+    display: block;
+    top: -999px;
+    background-color: #292929;
+    font-size: 24px;
+    padding: 80px 0 15px 40px;
+    transition: all ease 0.3s;
+  }
+  .header__burger-menu li {
+    margin-bottom: 25px;
+  }
+  .header__burger-menu li a {
+    color: #fabdd9;
+  }
+  .header__burger-menu-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+  .header__burger-menu-close img {
+    height: 20px;
+    width: 20px;
+  }
+  .header__logo {
+    width: 75px;
+    height: 75px;
+    font-size: 18px;
+  }
+
+  .gallery__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -100px;
+  }
+  .gallery__row img {
+    margin-left: 100px;
+    margin-bottom: 15px;
+    width: 76%;
+  }
+  .gallery__row img:nth-child(1) {
+    box-shadow: 0 0 16.9px 1.1px #82334e;
+  }
+  .gallery__row img:nth-child(2) {
+    box-shadow: 0 0 16.9px 1.1px #e88572;
+  }
+  .gallery__row img:nth-child(3) {
+    box-shadow: 0 0 16.9px 1.1px #d3e187;
+  }
+  .gallery__row img:nth-child(4) {
+    box-shadow: 0 0 16.9px 1.1px #ed7171;
+  }
+  .gallery__row img:nth-child(5) {
+    box-shadow: 0 0 16.9px 1.1px #f259c5;
+  }
+  .gallery__row img:nth-child(6) {
+    box-shadow: 0 0 16.9px 1.1px #726d8c;
+  }
+
+  .footer__inner {
+    height: 120px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .footer__contacts {
+    margin: 20px 0px;
+  }
+  .footer__contacts-text {
+    text-align: center;
+  }
+  .footer__authors {
+    display: none;
+  }
+}
