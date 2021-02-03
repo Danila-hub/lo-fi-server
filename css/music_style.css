@@ -210,16 +210,17 @@ h6 {
 }
 
 /* player */
-.mediacontent__row {
+.music__row {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.mediacontent__row img {
-  width: 299px;
+.music__row .player {
+  margin-top: 260px;
+  margin-bottom: 50px;
 }
-.mediacontent__row audio {
-  background-color: white;
+.music__row img {
+  width: 420px;
 }
 
 .footer {

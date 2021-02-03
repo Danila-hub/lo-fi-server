@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/music_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/player.css" />
     <title>lo-fi</title>
   </head>
 
@@ -47,12 +54,60 @@
           </div>
         </div>
         <div class="container">
-         <div class="mediacontent">
-            <div class="mediacontent__row">
-                <img src="/img/gifs/lofi_1.gif" alt="">
-                <audio controls src="/media/music/purrple-cat-gentle-breeze.mp3"></audio>
+          <div class="music__row">
+            <img src="/img/gifs/lofi_1.gif" alt="" />
+            <div class="player">
+              <div class="player__bar">
+                <div class="player__album">
+                  <div
+                    class="player__albumImg active-song"
+                    data-author="Purrple Cat"
+                    data-song="Gentle Breeze"
+                    data
+                    data-src="https://danila-hub.github.io/media/music/purrple-cat-gentle-breeze.mp3"
+                    style="background-image: url(/img/album.jpg)"
+                  ></div>
+                  <div
+                    class="player__albumImg"
+                    data-author="Khalid"
+                    data-song="Angels"
+                    data
+                    data-src="http://music.dawnfoxes.com/_fxs_/_upls_/_sngs_/USA/khalid-angels.mp3"
+                    style="background-image: url(/img/album.jpg)"
+                  ></div>
+                </div>
+                <div class="player__controls">
+                  <div class="player__prev">
+                    <svg class="icon">
+                      <use xlink:href="/img/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+
+                  <div class="player__play">
+                    <svg class="icon play">
+                      <use xlink:href="/img/sprite.svg#play"></use>
+                    </svg>
+                    <svg class="icon pause">
+                      <use xlink:href="/img/sprite.svg#pause"></use>
+                    </svg>
+                  </div>
+
+                  <div class="player__next">
+                    <svg class="icon">
+                      <use xlink:href="/img/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="player__timeline">
+                <p class="player__author"></p>
+                <p class="player__song"></p>
+                <div class="player__timelineBar">
+                  <div id="playhead"></div>
+                </div>
+              </div>
             </div>
-         </div>  
+          </div>
         </div>
       </div>
 
@@ -85,5 +140,13 @@
       </footer>
     </div>
     <script src="/js/button_burger.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/player.js"></script>
   </body>
 </html>

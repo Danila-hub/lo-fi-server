@@ -48,7 +48,7 @@ $headerHeight: 100px;
       display: none;
     }
     & span::before {
-      content: '';
+      content: "";
       position: absolute;
       top: -10px;
       left: 0px;
@@ -57,7 +57,7 @@ $headerHeight: 100px;
       background-color: #000000;
     }
     & span::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 10px;
       left: 0px;
@@ -66,14 +66,14 @@ $headerHeight: 100px;
       background-color: #000000;
     }
     & span {
-      content: '';
+      content: "";
       position: absolute;
       height: 3px;
       width: 40px;
       background-color: #000000;
     }
   }
-  font-family: 'OCRAbyBT';
+  font-family: "OCRAbyBT";
   background-color: #292929;
   width: 100%;
   position: fixed;
@@ -126,26 +126,22 @@ $headerHeight: 100px;
 }
 
 /* player */
-.mediacontent{
-    &__row{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       
-    }
-    &__row img{
-        width: 299px;
-        
-    }
-    &__row audio{
-        background-color: white;
-        
-        
-    }
+.music__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & .player {
+    margin-top: 260px;
+    margin-bottom: 50px;
+  }
+
+  & img {
+    width: 420px;
+  }
 }
 
 .footer {
-  font-family: 'OCRAbyBT';
+  font-family: "OCRAbyBT";
   background-color: #292929;
   width: 100%;
   &__inner {
@@ -180,7 +176,6 @@ $headerHeight: 100px;
     }
   }
 }
-
 
 /* media zone */
 @media (max-width: 1098px) {
@@ -256,7 +251,6 @@ $headerHeight: 100px;
     }
   }
   .gallery {
-    
     &__row {
       display: flex;
       flex-wrap: wrap;
