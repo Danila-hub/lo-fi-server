@@ -1,0 +1,7 @@
+1.Make user registration >> DONE {03.02.2021}
+2.Make user authorization (JWT) >> i make creating access_token cookie, remains add endpoints protection
+3.Make static files sending
+4.Make files uploading and storing on the server
+5.Add guard
+6.CRUD for users
+7.CRUD for images
